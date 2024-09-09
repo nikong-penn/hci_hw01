@@ -1,0 +1,20 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.everything {
+    background-color: gray;
+}
+
+.navbar {
+    font-size: 120px;
+    color: blue;
+    background-color: transparent;
+    border-radius: 12px;
+    border: 10px solid greenyellow;
+    
+}
+
+.
