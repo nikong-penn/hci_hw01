@@ -10,107 +10,105 @@
 <body>
     
     <div class="everything">
-
         <div class="navbar">
-            <button></button>
-            <button></button>
-            <span>Katy Texas</span>
-            <button></button>
-            <button></button>
+            <button class="navbar-button"><img src="./assets/but1.png"></button>
+            <div class="navbar-middle">
+                <button class="navbar-button"><img src="./assets/but2.png"></button>
+                <span>Katy</span>
+                <button class="navbar-button"><img src="./assets/but3.png"></button>
+            </div>
+            <button class="navbar-button"><img src="./assets/but4.png"></button>
         </div>
         <div class="bigweather">
-            <span>25</span>
+            <span class="temperature">25°</span>
             <span>Sunny</span>
-            <span>Feels like 25</span>
-            <figure></figure>
+            <span>Feels like 25°</span>
         </div>
         <div class="cards">
-            <div class="cardleft">
-                <div class="cardlefthead">
+            <div class="column left-column">
+                <div class="label forecast-label">
                     <span>Forecast</span>
-                    <button id="set1"></button>
+                    <button id="set1"><img src="./assets/but5.png"></button>
                 </div>
-                <div class="cardleftbody">
+                <div class="card forecast">
                     <ul>
-                        <li>
-                            <span>A</span>
-                            <img>
-                            <span>26</span>
+                        <li class="forcast-item">
+                            <span>M</span>
+                            <img src="./assets/wet2.png">
+                            <span>23°</span>
                         </li>
-                        <li>
-                            <span>A</span>
-                            <img>
-                            <span>26</span>
+                        <li class="forcast-item">
+                            <span> T</span>
+                            <img src="./assets/wet3.png">
+                            <span>24°</span>
                         </li>
-                        <li>
-                            <span>A</span>
-                            <img>
-                            <span>26</span>
+                        <li class="forcast-item">
+                            <span>W</span>
+                            <img src="./assets/wet2.png">
+                            <span>26°</span>
                         </li>
-                        <li>
-                            <span>A</span>
-                            <img>
-                            <span>26</span>
+                        <li class="forcast-item">
+                            <span> T</span>
+                            <img src="./assets/wet1.png">
+                            <span>32°</span>
                         </li>
-                        <li>
-                            <span>A</span>
-                            <img>
-                            <span>26</span>
+                        <li class="forcast-item">
+                            <span> F</span>
+                            <img src="./assets/wet4.png">
+                            <span>26°</span>
                         </li>
-                        <li>
-                            <span>A</span>
-                            <img>
-                            <span>26</span>
+                        <li class="forcast-item">
+                            <span> S</span>
+                            <img src="./assets/wet5.png">
+                            <span>24°</span>
                         </li>
-                        <li>
-                            <span>A</span>
-                            <img>
-                            <span>26</span>
+                        <li class="forcast-item">
+                            <span> S</span>
+                            <img src="./assets/wet5.png">
+                            <span>25°</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="cardright">
-                <div class="cardrighthead">
+            <div class="column right-column">
+                <div class="label info-label">
                     <span>Info</span>
-                    <button id="set2"></button>
+                    <button id="set2"><img src="./assets/but6.png"></button>
                 </div>
-                <div class="cardrightbody">
-                    <div class="info1">
-                        <div class="info1wind">
-                            <span>Wind</span>
-                            <img>
-                            <span>4km/h</span>
-                        </div>
-                        <div class="info1water">
-                            <span>Humidity</span>
-                            <img>
-                            <span>42%</span>
-                        </div>
-                        <div class="info1air">
-                            <span>Air Quality</span>
-                            <img>
-                            <span>Good</span>
-                        </div>
-                        <div class="info1sun">
-                            <span>UV</span>
-                            <img>
-                            <span>Low</span>
-                        </div>
+                <div class="card quadbox">
+                    <div class="quadbox-item wind">
+                        <span>Wind</span>
+                        <img src="./assets/small1.png">
+                        <span>4km/h</span>
                     </div>
-                    <div class="info2">
-                        <span>Sunset</span>
-                        <span>19:20</span>
-                        <figure></figure>
+                    <div class="quadbox-item water">
+                        <span>Humidity</span>
+                        <img src="./assets/small2.png">
+                        <span>42%</span>
                     </div>
-                    <div class="info3">
-                        <span>Bring with you</span>
-                        <span>Light Clothing & Sun protection</span>
-                        <figure></figure>
+                    <div class="quadbox-item air">
+                        <span>Air Quality</span>
+                        <img src="./assets/small3.png">
+                        <span>Good</span>
                     </div>
+                    <div class="quadbox-item sun">
+                        <span>UV</span>
+                        <img src="./assets/small4.png">
+                        <span>Low</span>
+                    </div>
+                </div>
+                <div class="card info2">
+                    <span>Sunset</span>
+                    <span>19:20</span>
+                </div>
+                <div class="card info3">
+                    <span>Bring with you</span>
+                    <span>Light Clothing & Sun protection</span>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
 </body>
 </html>

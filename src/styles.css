@@ -1,20 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900');
+
 html, body {
     width: 100%;
     height: 100%;
     margin: 0;
+    color: rgba(20, 24, 24, 0.853);
 }
 
 .everything {
-    background-color: gray;
+    width: 100%;
+    height: 100%;
+    padding-block: 1rem;
+    box-sizing: border-box;
+    background: linear-gradient(#E3F9EB 0%, #D9F4E6 30%, #AFD5C5 40%, #AFD5C5 100%);
+    font-family: "Poppins", sans-serif;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    justify-content: space-between;
 }
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Navigation bar */
 
 .navbar {
-    font-size: 120px;
-    color: blue;
+    padding-inline: 0.5rem;
+    border-radius: 2px;
     background-color: transparent;
-    border-radius: 12px;
-    border: 10px solid greenyellow;
-    
+    font-size: 1.5em;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.
+.navbar-button {
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background: none;
+    transform: scale(1.5);
+}
+
+.navbar-middle {
+    /* color: rgba(28, 33, 33, 0.8); */
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+/* Big weather */
+
+.bigweather {
+    flex-grow: 1;
+    padding-left: 1rem;
+    font-size: 1.5em;
+    background-image: url("./assets/big.png");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.temperature {
+    font-size: 3em;
+}
+
+/* Cards */
+
+.cards {
+    padding-inline: 0.5rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.5rem;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.label {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label button {
+    height: 2rem;
+    aspect-ratio: 1 / 1;
+    transform: scale(1.2);
+    border: none;
+    background: none;
+}
+
+.label span {
+    padding-left: 0.5rem;
+}
+
+.card {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #ffffff70;
+    border: 5px #61847f solid;
+    /* box-shadow: 0 0 0 3px green; */
+    box-sizing: border-box;
+}
+
+.column-left {
+    /* background-color: 3px solid gray; */
+}
+.forecast {
+    padding: 0;
+}
+.forecast ul {
+    margin: 0;
+    padding: 0;
+}
+.forcast-item {
+    width: 100%;
+    height: 3rem;
+    padding-inline: 0.5rem;
+    /* border-bottom: 0px solid #858a88b1; */
+    list-style-type: none;
+    box-sizing: border-box;
+    background: linear-gradient(#e3f9eb00 50%, #6e98881e 90%);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.forcast-item :first-child {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.forcast-item img {
+    transform: scale(1.2);
+}
+
+
+.quadbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.info2 {
+    background-image: url("./assets/mid1.png");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.info3 {
+    background-image: url("./assets/mid2.png");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
